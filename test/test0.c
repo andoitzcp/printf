@@ -6,7 +6,7 @@
 /*   By: acampo-p <acampo-p@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 21:32:50 by acampo-p          #+#    #+#             */
-/*   Updated: 2023/01/18 10:31:30 by acampo-p         ###   ########.fr       */
+/*   Updated: 2023/01/18 17:11:58 by acampo-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,10 @@ int	main(void)
 	printf("PERCENTAGE\n");
 	printf("this is a test: %%\n");
 	printf("MY_ITOH_TES\n");
-	ft_putptr(s);
+	//ft_putptr(s);
 	printf("\n");
 	printf("MY_PUTSTR_TEST\n");
-	ft_putstr(s);
+	//ft_putstr(s);
 	printf("\n");
 	printf("MY_NULPTR_TEST\n");
 	ft_putptr(NULL);
@@ -61,6 +61,25 @@ int	main(void)
 	ft_putint(ui);
 	printf("\n");
 	printf("MY_NEGINT_TEST\n");
-	ft_putint(d);
+	ft_putint(0);
+	printf("\n");
+	printf("MY_FT_PRINTF_TEST\n");
+	ft_printf("Lorem ipsum %s %p %d null:%p\n", "dolor", "amet", 420, NULL);
+	printf("Lorem ipsum %s %p %d null:%p\n", "dolor", "amet", 420, NULL);
+	ft_printf(" NULL %s NULL ", NULL);
+	printf("\n");
+	printf(" NULL %s NULL ", NULL);
+	printf("\n");
+	ft_printf(" %d ", 0);
+	printf("\n");
+	printf(" %d ", 0);
+	printf("\n");
+	ft_printf(" %x ", 0);
+	printf("\n");
+	printf(" %x ", 0);
+	printf("\n");
+	ft_printf(" %x ", -1);
+	printf("\n");
+	printf(" %x ", -1);
 	printf("\n");
 }

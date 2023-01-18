@@ -6,7 +6,7 @@
 /*   By: acampo-p <acampo-p@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 17:52:51 by acampo-p          #+#    #+#             */
-/*   Updated: 2023/01/18 11:13:44 by acampo-p         ###   ########.fr       */
+/*   Updated: 2023/01/18 17:03:28 by acampo-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static size_t	ft_figcalc(long n)
 	unsigned int	len;
 
 	len = 0;
-	if (n < 0)
+	if (n <= 0)
 	{
 		len++;
 		n *= -1;
@@ -61,7 +61,7 @@ size_t	ft_putint(int n)
 	size_t	len;
 
 	int_str = ft_itos(n);
-	len = ft_putstr(int_str);
+	len = ft_putstr(int_str, 'i');
 	free(int_str);
 	return (len);
 }
@@ -72,7 +72,7 @@ size_t	ft_putdec(int n)
 	size_t	len;
 
 	int_str = ft_itos(n);
-	len = ft_putstr(int_str);
+	len = ft_putstr(int_str, 'd');
 	free(int_str);
 	return (len);
 }
@@ -83,7 +83,7 @@ size_t	ft_putuni(unsigned int n)
 	size_t	len;
 
 	int_str = ft_itos(n);
-	len = ft_putstr(int_str);
+	len = ft_putstr(int_str, 'u');
 	free(int_str);
 	return (len);
 }
